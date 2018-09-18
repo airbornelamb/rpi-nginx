@@ -1,5 +1,5 @@
 # rpi-nginx
-Simple nginx docker
+Simple nginx docker for armhf/arm32v6
 
 `docker run -p 8080:8080 -v /path/on/host:/usr/share/nginx/html -d airbornelamb/rpi-nginx`
 
