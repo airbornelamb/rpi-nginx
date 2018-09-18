@@ -1,0 +1,14 @@
+version: '3'
+services:
+  nginx:
+    image: "airbornelamb/rpi-nginx"
+    ports:
+      - "6790:6790"
+    volumes:
+      - nginx_data:/usr/share/nginx/html
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+volumes:
+  nginx_data:
