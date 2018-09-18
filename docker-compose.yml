@@ -3,7 +3,7 @@ services:
   nginx:
     image: "airbornelamb/rpi-nginx"
     ports:
-      - "6790:6790"
+      - "8080:8080"
     volumes:
       - nginx_data:/usr/share/nginx/html
     deploy:
