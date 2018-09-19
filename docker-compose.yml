@@ -12,3 +12,4 @@ services:
         condition: on-failure
 volumes:
   nginx_data:
+    #external: true
